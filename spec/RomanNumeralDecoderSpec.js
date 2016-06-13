@@ -4,4 +4,9 @@ describe("Roman", function() {
     var roman = new Roman();
     expect(roman.decode('I')).toEqual(1);
   });
+
+  it("returns appropriate value for 6", function(){
+    var roman = new Roman();
+    expect(roman.decode('VI')).toEqual(6);
+  });
 });
