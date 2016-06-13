@@ -4,11 +4,13 @@ function Roman(input) {
 
 Roman.prototype.decode = function(inp) {
   var array = inp.split('');
-  console.log(array);
   var total = 0;
   for(i=0; i<array.length; i++){
+    if(array[i] == 'I' && array[i+1] == 'V' || array[i+1] == 'X') {
+      total -= 1;
+    } else {
     total += this.key[array[i]];
-    console.log(total);
+    }
   }
   return total;
 };
