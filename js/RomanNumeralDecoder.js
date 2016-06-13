@@ -1,3 +1,3 @@
-exports.decode = function(roman){
-
-};
+function Decode(roman) {
+  this.roman = roman;
+}
