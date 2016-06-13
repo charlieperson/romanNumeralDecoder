@@ -3,5 +3,10 @@ function Roman(input) {
 }
 
 Roman.prototype.decode = function(inp) {
-  return this.key[inp];
+  var array = inp.split('');
+  var total = 0;
+  for(i=0; i<array.length; i++){
+    total += this.key[array[i]];
+  }
+  return total;
 };
