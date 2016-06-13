@@ -4,9 +4,11 @@ function Roman(input) {
 
 Roman.prototype.decode = function(inp) {
   var array = inp.split('');
+  console.log(array);
   var total = 0;
   for(i=0; i<array.length; i++){
     total += this.key[array[i]];
+    console.log(total);
   }
   return total;
 };
