@@ -1,7 +1,7 @@
-describe("Decode", function() {
+describe("Roman", function() {
 
   it("returns appropriate value for 1", function(){
-    var decode = new Decode('I');
-    expect(decode.roman).toEqual(1);
+    var roman = new Roman();
+    expect(roman.decode('I')).toEqual(1);
   });
 });
