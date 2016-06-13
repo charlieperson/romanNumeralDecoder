@@ -14,4 +14,9 @@ describe("Roman", function() {
     var roman = new Roman();
     expect(roman.decode('IX')).toEqual(9);
   });
+
+  it("returns appropriate value for 21", function(){
+    var roman = new Roman();
+    expect(roman.decode('XXI')).toEqual(21);
+  });
 });
